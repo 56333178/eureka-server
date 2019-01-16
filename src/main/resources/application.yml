@@ -1,0 +1,17 @@
+server:
+  port: 8888
+eureka:
+  instance:
+    hostname: eureka1
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://root:123456@eureka2:8887/eureka/
+spring:
+  application:
+    name: register-center
+  security:
+    user:
+      name: root
+      password: 123456
