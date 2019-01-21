@@ -2,12 +2,12 @@ server:
   port: 8888
 eureka:
   instance:
-    hostname: eureka1
+    hostname: aitieta.com
   client:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://root:123456@eureka2:8887/eureka/
+      defaultZone: http://root:123456@aitieta.com:8887/eureka/
 spring:
   application:
     name: register-center
