@@ -7,7 +7,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://root:123456@eureka2:8887/eureka/
+      defaultZone: http://root:123456@aitie.com:8887/eureka/
 spring:
   application:
     name: register-center
