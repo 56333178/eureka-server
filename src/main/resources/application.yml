@@ -7,6 +7,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5
     instance-id: ${eureka.instance.ip-address}:${server.port}
     ip-address: aitieta.com
+    prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
