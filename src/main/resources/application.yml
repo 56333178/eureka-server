@@ -4,8 +4,8 @@ eureka:
   instance:
     hostname: eureka1
     initial-status: starting
-    lease-renewal-interval-in-seconds: 5
-    lease-expiration-duration-in-seconds: 5
+#    lease-renewal-interval-in-seconds: 5
+#    lease-expiration-duration-in-seconds: 5
     instance-id: ${eureka.instance.ip-address}:${server.port}
     ip-address: aitieta.com
     prefer-ip-address: true
@@ -14,8 +14,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://root:123456@aitieta.com:8888/eureka/,http://root:123456@aitieta.com:8887/eureka/
-    eureka-service-url-poll-interval-seconds: 10
-    registry-fetch-interval-seconds: 10
+#    eureka-service-url-poll-interval-seconds: 10
+#    registry-fetch-interval-seconds: 10
 #    eureka-server-read-timeout-seconds: 100000
 #  server:
 #    peer-node-read-timeout-ms: 100000
